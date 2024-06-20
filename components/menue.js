@@ -5,6 +5,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import style from '../styles/menue.module.css';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 
+
 const Menue = () => {
   return (
    
@@ -15,13 +16,12 @@ const Menue = () => {
         
         <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
         <div className="relative group">
-
-         <a href='/login.js'>
+         <a href='../pa'>
         <FaRegUser className="text-xl cursor-pointer" />
         <span className="absolute top-8 left-1/2 transform -translate-x-1/2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           Se connecter
         </span>
-        </a>
+        </a>  
       </div>
       <div className="relative group">
         <IoSearchOutline className="text-xl cursor-pointer" />

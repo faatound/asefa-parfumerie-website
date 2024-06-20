@@ -3,6 +3,7 @@ import style from '../styles/elements.module.css'
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { MdFavoriteBorder } from "react-icons/md";
 
+
  const Elements = () => {
   return (
     <div className={style.container}>
