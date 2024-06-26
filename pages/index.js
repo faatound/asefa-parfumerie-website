@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { LuPartyPopper } from "react-icons/lu";
 import Menue from "../components/menue"
 import Elements from "@/components/elements";
+import Link from 'next/link';
 
 
 
