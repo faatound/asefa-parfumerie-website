@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaRegUser } from "react-icons/fa6";
-import { IoSearchOutline } from "react-icons/io5";
 import { MdFavoriteBorder } from "react-icons/md";
 import style from '../styles/login.module.css';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import Link from 'next/link';
+import SearchBar from './searchbar';
 
 
 const Menue = () => {
@@ -13,7 +13,7 @@ const Menue = () => {
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
-            <span className={`${style.nom} self-center text-2xl font-semibold whitespace-nowrap dark:text-white`}>AsefaParfumerie</span>
+            <span className=" text-2xl self-center  font-semibold whitespace-nowrap dark:text-white">ASEFAPARFUMERIE</span>
         
         <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
         <div className="relative group">
@@ -25,16 +25,15 @@ const Menue = () => {
         </Link>  
       </div>
       <div className="relative group">
-        <IoSearchOutline className="text-xl cursor-pointer" />
-        <span className="absolute top-8 left-1/2 transform -translate-x-1/2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          Recherche
-        </span>
+      <SearchBar/>
       </div>
       <div className="relative group">
+      <Link href='/post/fav'>
         <MdFavoriteBorder className="text-xl cursor-pointer" />
         <span className="absolute top-8 left-1/2 transform -translate-x-1/2 w-max bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           Favoris
         </span>
+        </Link>  
       </div>
       <div className="relative group">
         <HiOutlineShoppingBag className="text-xl cursor-pointer" />
@@ -49,6 +48,7 @@ const Menue = () => {
                 </svg>
             </button>
         </div>
+
         <div id="mega-menu-icons" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                 <li>
