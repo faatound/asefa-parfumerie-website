@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import StarRating from '../components/starRating';
+import Image from 'next/image';
 
 export default function ProductCard({ title, description, note, img, price, icon1, icon2 }) {
   const [userRating, setUserRating] = useState(note || 0);
@@ -9,10 +10,12 @@ export default function ProductCard({ title, description, note, img, price, icon
     <div className="group relative w-full bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col justify-between overflow-hidden cursor-pointer border border-gray-50 hover:border-transparent">
       {/* Image Container */}
       <div className="relative w-full h-80 bg-cream overflow-hidden flex justify-center items-center p-6">
-        <img 
-          className="object-contain w-full h-full mix-blend-multiply transition-transform duration-700 group-hover:scale-105" 
+        <Image 
+          className="object-contain transition-transform duration-700 group-hover:scale-105 mix-blend-multiply" 
           alt={title} 
           src={img} 
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         
         {/* Floating Actions */}

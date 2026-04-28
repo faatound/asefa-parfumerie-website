@@ -35,7 +35,7 @@ export default function HuileCorps() {
             </h1>
             <div className="w-32 h-1 bg-champagne mx-auto mb-6"></div>
             <p className="text-gray-500 max-w-xl mx-auto font-light">
-              Nourrissez votre peau tout en l'enveloppant d'un voile parfumé d'exception.
+              Nourrissez votre peau tout en l&apos;enveloppant d&apos;un voile parfumé d&apos;exception.
             </p>
           </motion.div>
 

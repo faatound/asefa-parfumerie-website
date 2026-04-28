@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const categories = [
   {
@@ -53,10 +54,11 @@ const Categories = () => {
               className={`relative h-96 group overflow-hidden rounded-2xl ${cat.color} border border-gray-100 flex flex-col items-center justify-center p-8 text-center transition-all duration-500 hover:shadow-2xl`}
             >
               <div className="relative w-48 h-48 mb-8 transition-transform duration-500 group-hover:scale-110">
-                <img 
+                <Image 
                   src={cat.image} 
                   alt={cat.title} 
-                  className="w-full h-full object-contain mix-blend-multiply"
+                  fill
+                  className="object-contain mix-blend-multiply p-4"
                 />
               </div>
               <h3 className="text-xl font-serif font-bold text-charcoal mb-2 uppercase tracking-widest">{cat.title}</h3>

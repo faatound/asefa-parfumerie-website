@@ -13,7 +13,7 @@ const Footer = () => {
               ASEFA<span className="text-champagne font-light">PARFUMERIE</span>
             </Link>
             <p className="text-cream/60 font-light leading-relaxed">
-              Votre destination privilégiée pour les fragrances d'exception et le luxe olfactif. Redéfinissez votre présence avec nos collections exclusives.
+              Votre destination privilégiée pour les fragrances d&apos;exception et le luxe olfactif. Redéfinissez votre présence avec nos collections exclusives.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-champagne hover:border-champagne transition-all duration-300">
@@ -38,7 +38,7 @@ const Footer = () => {
               <li><Link href="/" className="hover:text-champagne transition-colors">Accueil</Link></li>
               <li><Link href="/post/phomme" className="hover:text-champagne transition-colors">Parfums Homme</Link></li>
               <li><Link href="/post/pfemme" className="hover:text-champagne transition-colors">Parfums Femme</Link></li>
-              <li><Link href="/post/spray" className="hover:text-champagne transition-colors">Sprays & Déos</Link></li>
+              <li><Link href="/post/spray" className="hover:text-champagne transition-colors">Sprays &amp; Déos</Link></li>
               <li><Link href="/post/huile" className="hover:text-champagne transition-colors">Huiles de Corps</Link></li>
             </ul>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
             <h4 className="text-champagne font-bold uppercase tracking-widest text-sm mb-8">Service Client</h4>
             <ul className="flex flex-col gap-4 text-cream/70 font-light">
               <li><Link href="#" className="hover:text-champagne transition-colors">Contactez-nous</Link></li>
-              <li><Link href="#" className="hover:text-champagne transition-colors">Livraison & Retours</Link></li>
+              <li><Link href="#" className="hover:text-champagne transition-colors">Livraison &amp; Retours</Link></li>
               <li><Link href="#" className="hover:text-champagne transition-colors">FAQ</Link></li>
               <li><Link href="#" className="hover:text-champagne transition-colors">Suivre ma commande</Link></li>
               <li><Link href="#" className="hover:text-champagne transition-colors">Mentions Légales</Link></li>
@@ -68,7 +68,7 @@ const Footer = () => {
                 className="bg-cream/10 border border-cream/20 rounded-lg px-4 py-3 text-cream focus:outline-none focus:border-champagne transition-colors"
               />
               <button className="bg-champagne text-charcoal font-bold tracking-widest uppercase text-xs py-3 rounded-lg hover:bg-cream transition-colors">
-                S'abonner
+                S&apos;abonner
               </button>
             </form>
           </div>

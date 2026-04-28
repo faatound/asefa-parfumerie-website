@@ -26,7 +26,7 @@ export default function Home() {
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-champagne"></span>
           </h2>
           <p className="mt-8 text-gray-500 font-light max-w-xl mx-auto">
-            Découvrez les fragrances les plus plébiscitées par nos clients. Une sélection d'excellence pour tous les goûts.
+            Découvrez les fragrances les plus plébiscitées par nos clients. Une sélection d&apos;excellence pour tous les goûts.
           </p>
         </div>
         

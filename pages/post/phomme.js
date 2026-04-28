@@ -47,7 +47,7 @@ export default function ParfumHomme() {
             </h1>
             <div className="w-32 h-1 bg-champagne mx-auto mb-6"></div>
             <p className="text-gray-500 max-w-xl mx-auto font-light">
-              Une sélection de fragrances puissantes et raffinées pour l'homme moderne.
+              Une sélection de fragrances puissantes et raffinées pour l&apos;homme moderne.
             </p>
           </motion.div>
 

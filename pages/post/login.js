@@ -1,46 +1,38 @@
 import React from 'react'
 import Mdstyle from'/styles/login.module.css'
-import { FaUser } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
 import Link from 'next/link';
 
- export default function Login() {
+export default function login() {
   return (
-    <div className="flex h-screen">
-    <div className="w-1/2 flex items-center justify-center">
+    <div className={Mdstyle.container}>
+      <div className={Mdstyle.left}>
       <img src='/1.png' alt='Asefa Parfumerie' className='' />
-    </div>
-    <div className="w-1/2 flex flex-col items-center justify-center">
-      <span className={`${Mdstyle.nom} self-center text-2xl font-semibold whitespace-nowrap dark:text-white`}>
-        AsefaParfumerie
-      </span>
-      <div className={Mdstyle.wrapper}>
+        <h1>Bienvenue chez ASEFA</h1>
+        <p>Connectez-vous pour accéder à votre univers parfumé.</p>
+      </div>
+      <div className={Mdstyle.right}>
         <form action=''>
-          <h1>Login</h1>
-          <div className={Mdstyle.inputBox}>
+            <h2>Login</h2>
+            <div className={Mdstyle.inputbox}>
             <input type='text' placeholder="username" required />
-            <FaUser className={Mdstyle.icon} />
-          </div>
-          <div className={Mdstyle.inputBox}>
+            </div>
+            <div className={Mdstyle.inputbox}>
             <input type='password' placeholder="password" required />
-            <FaLock className={Mdstyle.icon} />
-          </div>
-          <div className={Mdstyle.rememberForgot}>
-            <label> 
+            </div>
+            <div className={Mdstyle.remember}>
+              <label>
               <input type='checkbox' /> Remember Me
-            </label>
-            <a href="#">Forgot Password</a>
-          </div>
-          <button type="submit">Login</button>
-          <div className={Mdstyle.registerLink}>
-            <p>Don't have an account? 
-              <Link href="/post/register"> Register</Link>
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type='submit' className={Mdstyle.btn}>Login</button>
+            <div className={Mdstyle.register}>
+            <p>Don&apos;t have an account? 
+              <Link href="/post/register">Register</Link>
             </p>
-          </div>
+            </div>
         </form>
       </div>
     </div>
-  </div>
   )
 }
-

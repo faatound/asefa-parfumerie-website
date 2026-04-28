@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 
 const products = [
   {
-    title: "J'adore Dior",
+    title: "J&apos;adore Dior",
     description: "Eau de Parfum - Bouquet Floral",
     img: "/s2142016-main-zoom.webp",
     price: "85.000 FCFA"
   },
   {
     title: "Chanel N°5",
-    description: "Parfum - L'Éternel Féminin",
+    description: "Parfum - L&apos;Éternel Féminin",
     img: "/s2205417-main-zoom.webp",
     price: "95.000 FCFA"
   },

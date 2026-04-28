@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -13,11 +14,12 @@ const About = () => {
             viewport={{ once: true }}
             className="lg:w-1/2 relative"
           >
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-              <img 
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full">
+              <Image 
                 src="/hero-luxury.png" 
                 alt="Brand Story" 
-                className="w-full h-[500px] object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="absolute -top-8 -left-8 w-64 h-64 bg-champagne/20 rounded-full blur-3xl -z-0"></div>
@@ -26,7 +28,7 @@ const About = () => {
             {/* Experience Badge */}
             <div className="absolute bottom-12 -right-6 z-20 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center">
               <span className="text-4xl font-serif font-bold text-champagne">10+</span>
-              <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Années d'Excellence</span>
+              <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Années d&apos;Excellence</span>
             </div>
           </motion.div>
 
@@ -39,12 +41,12 @@ const About = () => {
           >
             <span className="text-champagne font-medium tracking-[0.3em] uppercase text-xs mb-4 block">Notre Histoire</span>
             <h2 className="text-4xl md:text-5xl font-serif text-charcoal mb-8 leading-tight">
-              L'Art de la Parfumerie <br />
+              L&apos;Art de la Parfumerie <br />
               <span className="text-gray-400 italic font-light">Redéfini par ASEFA</span>
             </h2>
             <div className="space-y-6 text-gray-600 font-light leading-relaxed text-lg">
               <p>
-                Depuis plus d'une décennie, ASEFA PARFUMERIE s'efforce de capturer l'essence même de l'élégance. Nos fragrances ne sont pas seulement des parfums, mais des déclarations d'identité.
+                Depuis plus d&apos;une décennie, ASEFA PARFUMERIE s&apos;efforce de capturer l&apos;essence même de l&apos;élégance. Nos fragrances ne sont pas seulement des parfums, mais des déclarations d&apos;identité.
               </p>
               <p>
                 Nous sélectionnons méticuleusement les ingrédients les plus rares à travers le monde pour créer des accords uniques qui laissent un sillage inoubliable. Notre engagement envers la qualité et le luxe se reflète dans chaque flacon que nous signons.
